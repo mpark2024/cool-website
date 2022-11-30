@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Math</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="yay">
+
+    <h1> SAT Math Questions</h1>
+    <script>
+        var i = 0; 			
+        var images = [];	
+        var time = 3000;	
+            
+        
+        images[0] = "Images/cover3.jpg";
+        images[1] = "Images/hqdefault_1.jpg";
+        images[2] = "Images/IMG_5714.jpg";
+        images[3] = "Images/IMG_5743.jpg";
+        images[4] = "Images/IMG_5897.jpg";
+        images[5] = "Images/IMG_6036.jpg";
+
+        
+        function changeImg(){
+            document.slide.src = images[i];
+
+            if(i < images.length - 1){
+                i++; 
+            } 
+            else { 
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload=changeImg;
+    </script>
+
+    <img name="slide">
+    <p>Maria is staying at a hotel that charges $99.95 per night plus tax for a room. A tax of 8% is applied to the room rate, and an additional onetime untaxed fee of $5.00 is charged by the hotel. Which of the following represents Maria’s total charge, in dollars, for staying x nights?</p>
+
+    <ul>
+        <div>
+            <li>(99.95 + 0.08x) + 5</li>
+        </div>
+        <div>
+            <li>1.08(99.95x) + 5</li> 
+        </div>
+        <div>
+            <li>1.08(99.95x + 5)</li> 
+        </div>
+        <div>
+            <li>1.08(99.95 + 5)x</li> 
+        </div>
+    </ul>
+
+    <p>x² + y² = 153
+        y = −4x
+        If (x, y) is a solution to the system of equations above, what is the value of x²?</p> 
+    <u1>
+        <li>-51</li>
+        <li>3</li>
+        <li>9</li>
+        <li>144</li>
+    </u1>
+
+    <p>The function f is defined by f(x) = 2x³ + 3x² + cx + 8, where c is a constant. In the xy-plane, the graph of f intersects the x-axis at the three points (−4, 0), (1/2, 0), and (p, 0). What is the value of c?</p>
+
+    <ul>
+        <li>-18</li>
+        <li>-2</li>
+        <li>2</li>
+        <li>10</li>
+    </ul>
+
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
